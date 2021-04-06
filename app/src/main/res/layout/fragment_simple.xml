@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/my_fragment_color"
+    android:orientation="horizontal"
+    tools:context=".SimpleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/fragment_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/radio_group"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:padding="4dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/kitap_begeni"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/fragment_header"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radio_button_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/yes"/>
+        <RadioButton
+            android:id="@+id/radio_button_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/no"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/liking_song_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_header"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/kitapPuan"
+        android:layout_marginTop="7dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:padding="4dp"
+        ></TextView>
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/liking_song_header"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@id/radio_group"
+        style = "@style/customRatingBar"
+        android:isIndicator="false"
+        android:saveEnabled="true"
+
+        ></RatingBar>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
