@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "FragmentExampleKotlin"
+rootProject.name = "FragmentCommunicationKotlin"
