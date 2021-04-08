@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FragmentExampleKotlin</string>
+    <string name="app_name">fragmentCommunicationKotlin</string>
     <string name="baslık1">Yüzyıllık Yalnızlık</string>
     <string name="ozet1">1982 Nobel Edebiyat Ödüllü, Kolombiyalı yazar Gabriel García Márquez in 1967 yılında Meksika ya ilk gidişinde yazdığı başyapıtı; (İspanyolca Cien años de soledad). Yazar çocukluğunun geçtiği Aracataca yı Macondo adıyla fantastik bir kurguyla sunmuştur ve amacını çocukluk günlerini sanatsal bir dille ardında bırakmak olarak açıklamıştır. Kitap büyülü gerçekliğin en önemli eserlerindendir. İlk baskısı Sander tarafından 1974 yılında yayınlanmıştır.Çevirisini Seçkin Selvi nin yaptığı Can Yayınları 2005 tarihli 27. baskısının arka kapağında García Márquez in ağzından şu sözler yer almaktadır: "Yüzyıllık Yalnızlık'ı yazmaya başladığımda, çocukluğumda beni etkilemiş olan her şeyi edebiyat aracılığıyla aktarabileceğim bir yol bulmak istiyordum. Çok kasvetli kocaman bir evde, toprak yiyen bir kız kardeş, geleceği sezen bir büyükanne ve mutlulukla çılgınlık arasında ayrım gözetmeyen, adları birörnek bir yığın hısım akraba arasında geçen çocukluk günlerimi sanatsal bir dille ardımda bırakmaktı amacım. Yüzyıllık Yalnızlık'ı iki yıldan daha kısa bir sürede yazdım. Ama yazı makinemin başına oturmadan önce bu kitap hakkında düşünmek on beş, on altı yılımı aldı. Büyükannem, en acımasız şeyleri, kılını bile kıpırdatmadan, sanki yalnızca gördüğü şeylermiş gibi anlatırdı bana.Anlattığı öyküleri bu kadar değerli kılan şeyin, onun duygusuz tavrı ve imgelerindeki zenginlik olduğunu kavradım. Yüzyıllık Yalnızlık'ı büyükannemin işte bu yöntemini kullanarak yazdım. Bu romanı büyük bir dikkat ve keyifleokuyan, hiç şaşırmayan sıradan insanlar tanıdım. Şaşırmadılar, çünkü ben onlara hayatlarında yeni olan bir şey anlatmamıştım. Kitaplarımda gerçekliğe dayanmayan tek cümle bulamazsınız."</string>
 
@@ -18,4 +18,6 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="kitapPuan">Kitaba Verdiğiniz Puan:</string>
+
+    <string name="exeption_message">must implement OnFragmentInteractionListener</string>
 </resources>

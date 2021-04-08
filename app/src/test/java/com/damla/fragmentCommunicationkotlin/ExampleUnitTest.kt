@@ -1,4 +1,4 @@
-package com.damla.fragmentexamplekotlin
+package com.damla.fragmentCommunicationkotlin
 
 import org.junit.Test
 

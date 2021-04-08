@@ -1,16 +1,18 @@
-package com.damla.fragmentexamplekotlin
+package com.damla.fragmentCommunicationkotlin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.damla.fragmentexamplekotlin.databinding.ActivitySecondBinding
+import android.widget.Toast
+import com.damla.fragmentCommunicationkotlin.databinding.ActivitySecondBinding
 
-class SecondActivity : AppCompatActivity() {
+class SecondActivity : AppCompatActivity(),SimpleFragment.OnFragmentInteractionListener {
 
     private lateinit var binding: ActivitySecondBinding
     var isFragmentDisplay : Boolean = false
     val STATE_FRAGMENT : String
+    var mRadioButtonChoice : Int = 2
 
     init {
         STATE_FRAGMENT = "state_of_fragment"
@@ -48,7 +50,7 @@ class SecondActivity : AppCompatActivity() {
     fun Ac(){
         val fragmentManager = supportFragmentManager
         val fragmentTransection = fragmentManager.beginTransaction()
-        val fragment = SimpleFragment()
+        val fragment = SimpleFragment().newInstance(mRadioButtonChoice)
         fragmentTransection.replace(R.id.fragment_container,fragment).commit()
         binding.btOpen.setText(R.string.butonKapat)
         isFragmentDisplay = true
@@ -68,6 +70,11 @@ class SecondActivity : AppCompatActivity() {
     fun Onceki(view: View){
         val intent = Intent(this,MainActivity::class.java)
         startActivity(intent)
+    }
+
+    override fun onRadioButtonChoice(choice: Int) {
+        mRadioButtonChoice = choice
+        Toast.makeText(this,"Choice is ${Integer.toString(choice)}",Toast.LENGTH_LONG).show()
     }
 
 
